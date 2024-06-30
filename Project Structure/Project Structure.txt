@@ -1,0 +1,24 @@
+AutoHub/
+├── css/
+│   └── styles.css
+├── js/
+│   ├── main.js
+│   └── chat.js
+├── images/
+│   └── (all image files)
+├── includes/
+│   ├── header.php
+│   ├── footer.php
+│   ├── db_connect.php
+│   ├── wallet_functions.php
+│   ├── chat_functions.php
+│   └── notification_functions.php
+├── index.php
+├── account.php
+├── wallet.php
+├── chat.php
+├── notifications.php
+├── product_list.php
+├── product_details.php
+├── cart.php
+└── checkout.php
