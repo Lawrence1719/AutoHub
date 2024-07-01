@@ -1,0 +1,58 @@
+AutoHub/
+│
+├── index.php                # Homepage
+├── account.php              # Account page (login and registration)
+├── profile.php              # Profile page (for logged-in users)
+├── cart.php                 # Shopping cart page
+├── checkout.php             # Checkout page
+├── product.php              # Product details page
+├── categories.php           # Categories page
+├── search.php               # Search results page
+├── wallet.php               # Wallet page
+├── chat.php                 # Chat system page
+├── notifications.php        # Notifications page
+│
+├── css/
+│   ├── styles.css           # Main stylesheet
+│   ├── bootstrap.min.css    # Bootstrap CSS
+│
+├── js/
+│   ├── scripts.js           # Main JavaScript file
+│   ├── chat.js              # Chat system JavaScript file
+│   ├── notifications.js     # Notifications system JavaScript file
+│   ├── wallet.js            # Wallet system JavaScript file
+│
+├── img/                     # Image assets
+│   ├── logo.png
+│   ├── banner.jpg
+│   ├── product1.jpg
+│   ├── ...
+│
+├── includes/
+│   ├── header.php           # Header include file
+│   ├── footer.php           # Footer include file
+│   ├── navbar.php           # Navbar include file
+│   ├── db_connect.php       # Database connection file
+│   ├── functions.php        # Common functions file
+│
+├── admin/
+│   ├── dashboard.php            # Admin dashboard
+│
+├── api/
+│   ├── wallet.php           # API for wallet system
+│   ├── chat.php             # API for chat system
+│   ├── notifications.php    # API for notifications system
+│   ├── products.php         # API for product data
+│   ├── users.php            # API for user data
+│
+├── assets/
+│   ├── fonts/               # Custom fonts
+│   ├── icons/               # Icons
+│
+├── uploads/                 # Directory for user uploads (profile pictures, product images, etc.)
+│
+├── sql/                     # SQL scripts for database setup and updates
+│   ├── create_tables.sql    # SQL script to create database tables
+│   ├── seed_data.sql        # SQL script to insert initial data
+│
+└── README.md                # Project documentation
