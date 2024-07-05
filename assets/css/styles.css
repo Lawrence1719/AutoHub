@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav .logo {
+    float: left;
+}
+
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .menu {
+    float: right;
+}
+
+nav .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .search {
+    clear: both;
+    margin-top: 10px;
+}
+
+nav .search input {
+    width: 100%;
+    padding: 10px;
+}
+
+header .jumbotron {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header .jumbotron h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+header .jumbotron p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+header .jumbotron .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}

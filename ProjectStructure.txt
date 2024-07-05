@@ -1,0 +1,50 @@
+AutoHub/
+├── admin/
+│   ├── dashboard.php (PHP)
+│   ├── manage_products.php (PHP)
+│   ├── manage_orders.php (PHP)
+│   ├── manage_users.php (PHP)
+│   └── css/
+│       └── admin_styles.css (CSS)
+├── assets/
+│   ├── css/
+│   │   └── styles.css (CSS)
+│   ├── js/
+│   │   ├── scripts.js (JavaScript)
+│   │   └── chat.js (JavaScript)
+│   ├── images/
+├── includes/
+│   ├── db.php (PHP)
+│   ├── header.php (PHP)
+│   ├── footer.php (PHP)
+│   ├── navbar.php (PHP)
+│   ├── wallet.php (Python)
+│   └── notifications.php (Node.js)
+├── modules/
+│   ├── wallet/
+│   │   ├── wallet.php (Python)
+│   │   └── transactions.php (Python)
+│   ├── chat/
+│   │   ├── chat.php (PHP)
+│   │   └── chat_backend.py (Python)
+│   ├── notifications/
+│   │   ├── notifications.php (PHP)
+│   │   └── notifications_backend.js (Node.js)
+│   ├── chatbot/
+│   │   ├── chatbot.php (PHP)
+│   │   └── chatbot_backend.py (Python)
+├── account.php (PHP)
+├── index.php (PHP)
+├── login.php (PHP)
+├── register.php (PHP)
+├── product.php (PHP)
+├── cart.php (PHP)
+├── checkout.php (PHP)
+└── app/
+    ├── mobile_app/ (Various)
+    └── api/
+        ├── auth.php (PHP)
+        ├── products.php (PHP)
+        ├── chat.py (Python)
+        ├── notifications.js (Node.js)
+        └── wallet.py (Python)
