@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Auto Hub</title>
 </head>
+
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo">
-                <a href="index.php">Auto Hub</a>
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="new_cars.php">New Cars</a></li>
-                    <li><a href="used_cars.php">Used Cars</a></li>
-                    <li><a href="trade_cars.php">Trade Cars</a></li>
-                </ul>
-            </div>
-            <div class="search">
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="logo.png" alt="Logo" class="logo">
+            <span class="website-name">Auto Hub</span>
+        </div>
+        <div class="navbar-right">
+            <a href="#">Home</a>
+            <a href="#">New Cars</a>
+            <a href="#">Used Cars</a>
+            <a href="#">Trade Cars</a>
+            <div class="search-bar">
                 <input type="text" placeholder="Search...">
-                <button><img src="assets/images/search-icon.png" alt="Search"></button>
+                <i class="fas fa-search search-icon"></i>
             </div>
-            <div class="icons">
-                <!-- Notification icon (to be implemented) -->
-                <a href="#" class="icon"><img src="assets/images/notification-icon.png" alt="Notifications"></a>
-                
-                <!-- Account icon -->
-                <div class="dropdown">
-                    <a href="#" class="icon"><img src="assets/images/account-icon.png" alt="Account"></a>
-                    <div class="dropdown-content">
-                        <?php if ($loggedIn) : ?>
-                            <a href="profile.php">Profile</a>
-                            <a href="settings.php">Settings</a>
-                            <a href="messages.php">Messages</a>
-                            <a href="logout.php">Logout</a>
-                        <?php else : ?>
-                            <a href="login.php">Login</a>
-                            <a href="register.php">Register</a>
-                        <?php endif; ?>
-                    </div>
+            <div class="dropdown">
+                <i class="fas fa-bell notification-icon"></i>
+                <div class="dropdown-content">
+                    <!-- Notifications will be added here -->
+                </div>
+            </div>
+            <div class="dropdown">
+                <i class="fas fa-user account-icon"></i>
+                <div class="dropdown-content">
+                    <!-- When logged out -->
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                    <!-- When logged in -->
+                    <!--
+                    <a href="#">Settings</a>
+                    <a href="#">Profile</a>
+                    <a href="#">Messages</a>
+                    <a href="#">Logout</a>
+                    -->
                 </div>
             </div>
         </div>
     </nav>
+
+    <script src="assets/js/scripts.js"></script>
 </body>
+
 </html>

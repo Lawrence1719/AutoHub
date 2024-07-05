@@ -4,57 +4,107 @@ body {
     padding: 0;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-nav {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    padding: 10px 20px;
+    color: white;
 }
 
-nav .logo {
-    float: left;
+.navbar-left {
+    display: flex;
+    align-items: center;
 }
 
-nav .logo a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav .menu {
-    float: right;
-}
-
-nav .menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav .menu ul li {
-    display: inline;
+.logo {
+    height: 40px;
     margin-right: 10px;
 }
 
-nav .menu ul li a {
-    color: #fff;
+.website-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    color: white;
     text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 0;
 }
 
-nav .search {
-    clear: both;
-    margin-top: 10px;
+.navbar-right a:hover {
+    border-bottom: 2px solid white;
 }
 
-nav .search input {
-    width: 100%;
-    padding: 10px;
+.search-bar {
+    position: relative;
+    margin-right: 50px;
 }
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0); /* Set the icon color to black */
+}
+
+.dropdown {
+    position: relative;
+    margin-left: 15px;
+    margin-right: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.notification-icon, .account-icon {
+    color: white; /* Set the icon color to white */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    right: 1px;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 header .jumbotron {
     background-color: #f4f4f4;
