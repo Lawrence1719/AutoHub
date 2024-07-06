@@ -12,17 +12,24 @@
 <body>
     <nav class="navbar">
         <div class="navbar-left">
-            <img src="logo.png" alt="Logo" class="logo">
-            <span class="website-name">Auto Hub</span>
+            <img src="assets/images/AutoHubLogo.png" alt="AutoHub" class="logo">
+            <a href="index.php" class="website-name">Auto Hub</a>
         </div>
         <div class="navbar-right">
             <a href="#">Home</a>
-            <a href="#">New Cars</a>
-            <a href="#">Used Cars</a>
-            <a href="#">Trade Cars</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
                 <i class="fas fa-search search-icon"></i>
+            </div>
+            <div class="dropwdown">
+                <i class="fas fa-marketplace-icon"></i>
+                <div class="dropdown-content">
+                    <a href="#">New Cars</a>
+                    <a href="#">Used Cars</a>
+                    <a href="#">Trade Cars</a>
+                </div>
             </div>
             <div class="dropdown">
                 <i class="fas fa-bell notification-icon"></i>
