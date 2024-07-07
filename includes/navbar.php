@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Auto Hub</title>
 </head>
@@ -12,7 +13,7 @@
 <body>
     <nav class="navbar">
         <div class="navbar-left">
-            <img src="assets/images/AutoHubLogo.png" alt="AutoHub" class="logo">
+            <img href src="assets/images/AutoHubLogo.png" alt="AutoHub" class="logo">
             <a href="index.php" class="website-name">Auto Hub</a>
         </div>
         <div class="navbar-right">
@@ -23,8 +24,8 @@
                 <input type="text" placeholder="Search...">
                 <i class="fas fa-search search-icon"></i>
             </div>
-            <div class="dropwdown">
-                <i class="fas fa-marketplace-icon"></i>
+            <div class="dropdown">
+                <i class="fas fa-store"></i>
                 <div class="dropdown-content">
                     <a href="#">New Cars</a>
                     <a href="#">Used Cars</a>

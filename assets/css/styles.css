@@ -53,7 +53,7 @@ body {
 }
 
 .search-bar input {
-    padding: 5px;
+    padding: 5px 30px 5px 10px; /* Adjust padding to make space for the icon */
     border-radius: 5px;
     border: none;
 }
@@ -63,7 +63,8 @@ body {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: rgb(0, 0, 0); /* Set the icon color to black */
+    color: black; /* Set the icon color to black */
+    pointer-events: none; /* Prevent the icon from blocking clicks to the input */
 }
 
 .dropdown {
@@ -108,7 +109,6 @@ body {
     transform: translateY(0);
 }
 
-
 header .jumbotron {
     background-color: #f4f4f4;
     padding: 50px 0;
@@ -136,5 +136,8 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
+}
+
+footer p {
+    margin-left: 30px;
 }
