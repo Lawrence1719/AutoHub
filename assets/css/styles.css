@@ -41,15 +41,16 @@ body {
     margin: 0 10px;
     left: 10px;
     cursor: pointer;
+     position: relative;
 }
 
 .navbar-right a:hover {
-    border-bottom: 2px solid white;
+    color: #ffd700; /* Change the text color on hover */
 }
 
 .search-bar {
     position: relative;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .search-bar input {
@@ -75,6 +76,10 @@ body {
     cursor: pointer;
 }
 
+.dropdown :hover {
+    color: #ffd700; /* Change the text color on hover */
+}
+
 .notification-icon, .account-icon {
     color: white; /* Set the icon color to white */
 }
@@ -82,7 +87,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -100,13 +105,25 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    color: #ffd700; /* Change the text color on hover */
 }
 
 .dropdown.active .dropdown-content {
     display: block;
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (min-width: 320px) { 
+    /* CSS rules here */
+}
+
+@media (min-width: 480px) { 
+    /* CSS rules here */
+}
+
+@media (min-width: 768px) { 
+    /* CSS rules here */
 }
 
 header .jumbotron {

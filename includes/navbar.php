@@ -20,17 +20,22 @@
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <i class="fas fa-search search-icon"></i>
-            </div>
             <div class="dropdown">
-                <i class="fas fa-store"></i>
+                <a href="#">Services <i class="fas fa-caret-down"> </i></a>
                 <div class="dropdown-content">
                     <a href="#">New Cars</a>
                     <a href="#">Used Cars</a>
-                    <a href="#">Trade Cars</a>
+                    <a href="#">Trade-In</a>
+                    <a href="#">Financing</a>
+                    <a href="#">Service & Parts</a>
+                    <a href="#">Dealerships</a>
+                    <a href="#">Reviews</a>
+                    <a href="#">Special Offers</a>
                 </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <i class="fas fa-search search-icon"></i>
             </div>
             <div class="dropdown">
                 <i class="fas fa-bell notification-icon"></i>
@@ -39,7 +44,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <i class="fas fa-user account-icon"></i>
+                <i class="fas fa-user account-icon"><i class="fas fa-caret-down"></i></i>
                 <div class="dropdown-content">
                     <!-- When logged out -->
                     <a href="#">Login</a>
