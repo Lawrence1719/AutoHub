@@ -64,8 +64,8 @@ body {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: black; /* Set the icon color to black */
-    pointer-events: none; /* Prevent the icon from blocking clicks to the input */
+    color: black;
+    pointer-events: none;
 }
 
 .dropdown {
@@ -77,11 +77,11 @@ body {
 }
 
 .dropdown :hover {
-    color: #ffd700; /* Change the text color on hover */
+    color: #ffd700;
 }
 
 .notification-icon, .account-icon {
-    color: white; /* Set the icon color to white */
+    color: white;
 }
 
 .dropdown-content {
@@ -105,13 +105,17 @@ body {
 }
 
 .dropdown-content a:hover {
-    color: #ffd700; /* Change the text color on hover */
+    color: #ffd700;
 }
 
 .dropdown.active .dropdown-content {
     display: block;
     opacity: 1;
     transform: translateY(0);
+}
+
+.menu-icon{
+    display: none;
 }
 
 @media (min-width: 320px) { 
@@ -122,9 +126,23 @@ body {
     /* CSS rules here */
 }
 
-@media (min-width: 768px) { 
-    /* CSS rules here */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-right a {
+        display: none;
+    }
+
+    .navbar-right .search-bar {
+        left: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
 }
+
 
 header .jumbotron {
     background-color: #f4f4f4;

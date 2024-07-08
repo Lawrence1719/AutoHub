@@ -46,19 +46,22 @@
             <div class="dropdown">
                 <i class="fas fa-user account-icon"><i class="fas fa-caret-down"></i></i>
                 <div class="dropdown-content">
-                    <!-- When logged out -->
-                    <a href="#">Login</a>
-                    <a href="#">Register</a>
-                    <!-- When logged in -->
-                    <!--
-                    <a href="#">Settings</a>
-                    <a href="#">Profile</a>
-                    <a href="#">Messages</a>
-                    <a href="#">Logout</a>
-                    -->
+                    <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true): ?>
+                        <a href="#">Settings</a>
+                        <a href="#">Profile</a>
+                        <a href="#">Messages</a>
+                        <a href="#">Logout</a>
+                    <?php else: ?>
+                        <a href="#">Login</a>
+                        <a href="#">Register</a>
+                    <?php endif; ?>
                 </div>
             </div>
+            <div>
+                <i class="fas fa-bars menu-icon"></i>
+            </div>
         </div>
+
     </nav>
 
     <script src="assets/js/scripts.js"></script>
