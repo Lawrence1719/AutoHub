@@ -64,8 +64,8 @@ body {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: black;
-    pointer-events: none;
+    color: black; /* Set the icon color to black */
+    pointer-events: none; /* Prevent the icon from blocking clicks to the input */
 }
 
 .dropdown {
@@ -77,11 +77,11 @@ body {
 }
 
 .dropdown :hover {
-    color: #ffd700;
+    color: #ffd700; /* Change the text color on hover */
 }
 
 .notification-icon, .account-icon {
-    color: white;
+    color: white; /* Set the icon color to white */
 }
 
 .dropdown-content {
@@ -105,7 +105,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    color: #ffd700;
+    color: #ffd700; /* Change the text color on hover */
 }
 
 .dropdown.active .dropdown-content {
@@ -114,65 +114,56 @@ body {
     transform: translateY(0);
 }
 
-.menu-icon{
-    display: none;
+@media (min-width:320px) {
+
 }
 
-@media (min-width: 320px) { 
-    /* CSS rules here */
+@media (min-width:481px) {
+
 }
 
-@media (min-width: 480px) { 
-    /* CSS rules here */
+@media (max-width:641px) {
+
 }
 
+@media (max-width:801px) {
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .navbar-right a {
-        display: none;
-    }
+}
 
-    .navbar-right .search-bar {
-        left: 10px;
-    }
-
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-    }
+@media (max-width:961px) {
 
 }
 
 
 header .jumbotron {
-    background-color: #f4f4f4;
-    padding: 50px 0;
-    text-align: center;
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
 }
 
 header .jumbotron h1 {
-    margin: 0;
-    font-size: 48px;
+  margin: 0;
+  font-size: 48px;
 }
 
 header .jumbotron p {
-    font-size: 24px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 header .jumbotron .btn {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
 }
 
 footer p {
-    margin-left: 30px;
+  margin-left: 30px;
 }
